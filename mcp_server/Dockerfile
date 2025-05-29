@@ -25,5 +25,6 @@ ENV PYTHONUNBUFFERED=1
 # Command to run the application
 EXPOSE 8000
 
-CMD ["uv", "run", "graphiti_mcp_server.py", "--transport", "sse"]
+CMD ["uvicorn", "graphiti_mcp_server:app", "--host", "0.0.0.0", "--port", "8000"]
+
 
