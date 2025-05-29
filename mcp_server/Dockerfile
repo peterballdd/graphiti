@@ -13,6 +13,7 @@ ENV PATH="/root/.local/bin:${PATH}"
 # Copy pyproject.toml and install dependencies
 COPY pyproject.toml .
 RUN uv sync
+RUN pip install uvicorn[standard] fastapi  # ✅ Add this line
 
 # Copy application code
 COPY graphiti_mcp_server.py .
