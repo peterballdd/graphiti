@@ -9,7 +9,6 @@ dependencies = [
     "mcp>=1.5.0",
     "openai>=1.68.2",
     "graphiti-core>=0.8.2",
-    "azure-identity>=1.21.0",
     "fastapi",                   # ✅ required for the API
     "uvicorn[standard]"         # ✅ needed to run the server
 ]
